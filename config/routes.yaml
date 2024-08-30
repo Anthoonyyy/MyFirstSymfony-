@@ -1,5 +1,17 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+#controllers:
+#    resource:
+#        path: ../src/Controller/
+#        namespace: App\Controller
+#    type: attribute
+
+homepage:
+    path: /
+    controller: App\Controller\FirstController::index
+
+contact:
+    path: /contact
+    controller : App\Controller\FirstController::form
+
+my_json:
+    path: /json
+    controller: App\Controller\FirstController::myJson
